@@ -39,7 +39,7 @@ const AdditionalPerks = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             But Wait, There's
             <span className="text-rose"> More!</span>
@@ -59,8 +59,7 @@ const AdditionalPerks = () => {
           {perks.map((perk, index) => (
             <div 
               key={index}
-              className="bg-gradient-to-br from-rose-light to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-scale border-2 border-coral/20"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="bg-gradient-to-br from-rose-light to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-coral/20"
             >
               <div className="bg-coral/10 p-4 rounded-xl w-fit mb-6 mx-auto">
                 {perk.icon}
@@ -78,7 +77,7 @@ const AdditionalPerks = () => {
         
         <div className="text-center">
           <Button 
-            className="bg-rose text-white hover:bg-rose/90 px-12 py-6 text-xl font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse-scale"
+            className="bg-rose text-white hover:bg-rose/90 px-12 py-6 text-xl font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl"
             size="lg"
           >
             Get Everything Now - Only $97
