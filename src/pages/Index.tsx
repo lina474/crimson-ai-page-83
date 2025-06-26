@@ -1,12 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import HeroSection from "@/components/HeroSection";
+import PainPointsWidget from "@/components/PainPointsWidget";
+import BenefitsWidget from "@/components/BenefitsWidget";
+import CourseTimeline from "@/components/CourseTimeline";
+import AdditionalPerks from "@/components/AdditionalPerks";
+import CertificateSection from "@/components/CertificateSection";
+import InstructorSection from "@/components/InstructorSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import BeforeAfterSection from "@/components/BeforeAfterSection";
+import UrgencySection from "@/components/UrgencySection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <HeroSection />
+      <PainPointsWidget />
+      <BenefitsWidget />
+      <CourseTimeline />
+      <AdditionalPerks />
+      <CertificateSection />
+      <InstructorSection />
+      <TestimonialsSection />
+      <BeforeAfterSection />
+      <UrgencySection />
     </div>
   );
 };
